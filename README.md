@@ -1,7 +1,8 @@
 # amfoss-tasks
 
 ## SELF INTRO
-
+Hello everyone,
+I am Aditi Nair, currently a first-year student in Electronics and Computer Engineering(EAC). My hobbies are listening to songs, watching movies and reading. 
 
 
 ### Why must you choose me?
