@@ -1,0 +1,16 @@
+baseURL: ''
+languageCode: 'en-us'
+title: 'ADITI NAIR'
+theme: "hugo-PaperMod"
+
+params:
+    homeInfoParams:
+        Title: Hi there wave
+        Content: Can be Info, links, about...
+
+
+    socialIcons: # optional
+    - name: linkedin
+      url: "<https://www.linkedin.com/in/aditinair6>" 
+    - name: mail
+      url: "<mailto:addynair6@gmail.com>"
