@@ -29,69 +29,87 @@ nav li{
 }
 
 body{
-    background-color: midnightblue;
+    background-color: rgb(1, 1, 32);
+	
 }
 
-.product-section {
-	padding-left:15px;
-	padding-right:15px;
-	margin-bottom:20px;
+.main{
+	display: grid;
+	grid-template-columns: 50px 50px 50px;
+	background-color: midnightblue;
 }
-.product-img {
-	width:auto;
-	height:270px;
-}
-.product-img-center {
-	text-align:center;
-}
-.product-border {
-	border: 1px solid #d1d1d1;
-	padding:20px;
-}
-.product-name a {
-	color: #232b33;
-	text-decoration: none;
-	font-size: 17px;
-	
-}
-.product-rating {
-	color: #FFC315;
-	font-size: 14px;
-	padding-top: 6px;
-}
-.product-rating span {
-	font-weight: 600;
-	color: #3c3b3b8c;
-	font-size: 12px;
-	
-}
-.product-discounted-price {
-	color: #333;
-	font-size: 18px;
-	letter-spacing: 0.1px;
-	font-weight: 600;
-	
-}
-.product-original-price {
-	color: #6f6f6f;
-	text-decoration: line-through;
-	font-size:14px;
-}
-	
-.product-discount {
-	border: 1px solid #ccc;
-	background: #fff;
+.p1{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
 	display: inline-block;
-	font-size: 10px;
-	color: #999;
-	padding: 5px;
-	border-radius: 1px;
-	
 }
-.product-price {
-	margin-top:15px;
+.p2{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
 }
-/**********   Product-Section CSS Code Ends  **********/
+.p3{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p4{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p5{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p6{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p7{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p8{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p9{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p10{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p11{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
+.p12{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display: inline-block;
+}
 
 
 
