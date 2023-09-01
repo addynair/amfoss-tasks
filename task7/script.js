@@ -21,15 +21,15 @@ async function getUsers(lat, lon){
 
 function getWeatherDetails(){
     const cityname = document.getElementById('cityInput').value
-
+    const tempElement = document.getElementById('temp')
+    const cityElement = document.getElementById('cityName')
+    const descElement = document.getElementById('description')
     getState(cityname).then(data => {
         getUsers(parseFloat(data[0].lat).toFixed(2),
             parseFloat(data[0].lon).toFixed(2)).then(
                 weatherData => {
                     console.log(weatherData)
-                    const tempElement = document.getElementById('temp')
-                    const cityElement = document.getElementById('cityName')
-                    const descElement = document.getElementById('description')
+                    
 
                     cityElement.innerHTML = cityname
                     descElement.innerHTML = weatherData.weather[0].description
@@ -38,6 +38,9 @@ function getWeatherDetails(){
     
                 
             )
+    }).catch(error =>{
+        console.log(error)
+        cityElement.innerHTML = 'City not found! Try again'
     })
 }
 
