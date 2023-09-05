@@ -2,7 +2,7 @@
 
 ## SELF INTRO
 Hello everyone,
-I am Aditi Nair, currently a first-year student in Electronics and Computer Engineering(EAC). My hobbies are listening to songs, watching movies and reading. 
+I am Aditi Nair, currently a first-year student in Electronics and Computer Engineering(EAC). My hobbies are listening to songs, watching movies and reading. I completed my high school from Amrita Vidyalayam. I belong to computer science background.
 
 
 ### Why must you choose me?
