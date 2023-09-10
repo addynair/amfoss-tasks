@@ -26,6 +26,7 @@ class MainWindow(QMainWindow):
             }
             QMainWindow {
                 background-color: black;
+                background-image: assets/landing.jpg
             }
             QLabel {
                 font-size: 32px;
@@ -34,7 +35,7 @@ class MainWindow(QMainWindow):
                 background-color: #BA263E;
                 color: dark-grey;
             }
-        """)
+       """ )
 
         labelmov = QLabel(self)
         labelmov.setScaledContents(True)
