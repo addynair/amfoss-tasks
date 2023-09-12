@@ -16,6 +16,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 token = os.getenv('TOKEN')
 today = date.today()
 
+bot.remove_command('help')
+
 
 
 
@@ -31,6 +33,16 @@ async def livescore(ctx):
     await ctx.send('fetching scores')
     await ctx.send(score)
     await ctx.send(today)
+
+
+
+@bot.command()
+async def help(ctx):
+    print("Loading")
+    await ctx.send("Commands:")
+    await ctx.send("!csv- get the csv file livescores are stored in")
+    await ctx.send("!livescore- get the live scores")
+
 
 
 
