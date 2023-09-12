@@ -8,5 +8,5 @@ doc = BeautifulSoup(result.text, "html.parser")
 
 
 match = doc.find(class_= "ds-flex ds-flex-col ds-mt-2 ds-mb-2")
-print(match.get_text())
+score = match.get_text()
 
