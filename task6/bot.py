@@ -3,9 +3,10 @@ import os
 from dotenv import load_dotenv 
 import requests
 from discord.ext import commands
-from scraper import score
+from scraper import *
 from datetime import date
 import pandas as pd
+
 
 
 load_dotenv()
@@ -19,6 +20,7 @@ today = date.today()
 bot.remove_command('help')
 
 
+f = open("index.csv", "a")
 
 
 @bot.event
@@ -30,10 +32,23 @@ async def on_ready():
 @bot.command()
 async def livescore(ctx):
     print("Taking in")
-    await ctx.send('fetching scores')
+    await ctx.send('fetching scores...')
     await ctx.send(score)
+    await ctx.send(sol)
+    add_score(score)
     await ctx.send(today)
 
+
+def add_score(score):
+    f.write(score + '\n')
+    
+    
+@bot.command()
+async def csv(ctx):
+    print("haha")
+    f.close()
+    file =open("index.csv")
+    await ctx.send(file=discord.File(file))
 
 
 @bot.command()
