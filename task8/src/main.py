@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
             }
             QMainWindow {
                 background-color: black;
-                background-image: assets/landing.jpg
+                background-image: url(assets/landing.jpg)
             }
             QLabel {
                 font-size: 32px;

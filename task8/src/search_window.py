@@ -1,6 +1,7 @@
 
 from PySide6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton
 import requests
+from PySide6.QtGui import QPixmap, QMovie
 
 class SearchWindow(QWidget):
     """
@@ -15,6 +16,13 @@ class SearchWindow(QWidget):
         self.textbox = QLineEdit(self)
         self.textbox.move(20, 20) 
         self.textbox.setGeometry(50, 50, 280, 40)
+       
+        background_label = QLabel(self)
+        background_label.setGeometry(0, 0, 850, 500) 
+
+        background_image = QPixmap("../assets/landing.png")  
+        background_label.setPixmap(background_image)
+
       
         
         label1 = QLabel("Enter the name", self)
