@@ -2,6 +2,7 @@
 from PySide6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton
 import requests
 from PySide6.QtGui import QPixmap, QMovie
+from poke_window import PokeWindow
 
 class SearchWindow(QWidget):
     """
@@ -11,11 +12,9 @@ class SearchWindow(QWidget):
     def __init__(self):
         super().__init__()
        
-        self.w = None        
-        self.setFixedSize(850, 500)
-        self.textbox = QLineEdit(self)
-        self.textbox.move(20, 20) 
-        self.textbox.setGeometry(50, 50, 280, 40)
+       
+        # self.textbox.setStyleSheet("""position: absolute""" )
+
        
         background_label = QLabel(self)
         background_label.setGeometry(0, 0, 850, 500) 
@@ -28,8 +27,19 @@ class SearchWindow(QWidget):
         label1 = QLabel("Enter the name", self)
         label1.setGeometry(50, 5, 600, 70)
 
+        self.w = None        
+        self.setFixedSize(850, 500)
+        self.textbox = QLineEdit(self)
+        self.textbox.move(20, 20) 
+        self.textbox.setGeometry(50, 50, 280, 40)
+        # label1.setStyleSheet("""
+        #                       background-color: grey
+        #                       postion: relative
+        #                       """)
+
         enter_button = QPushButton("Search", self)
         enter_button.setGeometry(50, 300, 160, 43)
+        enter_button.clicked.connect(self.open_poke_window)
         
         
         capture_button = QPushButton("Capture", self)
@@ -50,6 +60,18 @@ class SearchWindow(QWidget):
 
     # 3 #
     # Display all the Pokémon captured with their respective names using a new window.
+
+    def open_poke_window(self, checked):
+        poke_name = self.textbox.text()
+        response = requests.get("https://pokeapi.co/api/v2/pokemon/{}".format(poke_name))
+        if response.status_code == 200:
+            print("sucessfully fetched the data")
+            print(response.json())
+        else:
+            print(f"Hello person, there's a {response.status_code} error with your request")
+        if self.w is None:
+            self.w = PokeWindow()
+        self.w.show()
 
 if __name__ == "__main__":
     import sys
