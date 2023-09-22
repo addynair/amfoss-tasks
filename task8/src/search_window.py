@@ -2,7 +2,9 @@
 from PySide6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton
 import requests
 from PySide6.QtGui import QPixmap, QMovie
-from poke_window import PokeWindow
+import poke_window
+import json
+
 
 class SearchWindow(QWidget):
     """
@@ -44,6 +46,7 @@ class SearchWindow(QWidget):
         
         capture_button = QPushButton("Capture", self)
         capture_button.setGeometry(50, 350, 160, 43)
+       
 
         display_button = QPushButton("Display", self)
         display_button.setGeometry(50, 400, 160, 43)
@@ -60,24 +63,18 @@ class SearchWindow(QWidget):
 
     # 3 #
     # Display all the Pokémon captured with their respective names using a new window.
+    
+    # def get_text(self):
+    #     poke_name = self.textbox.text()
+    #     print(poke_name)
+    #     return poke_name
 
     def open_poke_window(self, checked):
-        poke_name = self.textbox.text()
-        response = requests.get("https://pokeapi.co/api/v2/pokemon/{}".format(poke_name))
-        if response.status_code == 200:
-            print("sucessfully fetched the data")
-            print(response.json())
-        else:
-            print(f"Hello person, there's a {response.status_code} error with your request")
+    
         if self.w is None:
-            self.w = PokeWindow()
+            self.w = poke_window.PokeWindow(self)
         self.w.show()
 
-if __name__ == "__main__":
-    import sys
-    from PySide6.QtWidgets import QApplication
 
-    app = QApplication(sys.argv)
-    window = SearchWindow()
-    window.show()
-    sys.exit(app.exec())
+
+
