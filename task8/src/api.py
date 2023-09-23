@@ -1,6 +1,17 @@
 import requests
 import json
 
+
+def download_image(url,name):
+    data = requests.get(url).content
+    f = open("images/{}.svg".format(name),'wb')
+    f.write(data)
+    f.close()
+
+def get_poke_img(data):
+    img = data['sprites']['other']['official-artwork']['front_default']
+    return img
+
 def get_pokename(data):
     forms = data['forms']
     for x in range(len(forms)):
