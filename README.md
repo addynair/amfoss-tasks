@@ -4,19 +4,19 @@
 Hello everyone,
 I am Aditi Nair from Palakkad, Kerala, currently a first-year student in Electronics and Computer Engineering(EAC) at Amrita Vishwa Vidyapeetham.
 
-| ##Tasks List  | ##Descrption                | ##Status            |
+| Tasks List    | Descrption                  | Status              |
 |:-------------:|:---------------------------:|:--------------:     |
-| `Task-00`     | Install Linux               | Completed           |
-| `Task-01`     | Terminal Wizard             | Completed           |
-| `Task-02`     | Lessgo Hugo                 | Completed           |
-| `Task-03`     | Hello,World!                | Completed           |
-| `Task-04`     | Competitive Programming     | Not Attempted       |
-| `Task-05`     | Hypertext Mockup Language   | Completed           |
-| `Task-06`     | Cricket Vault               | Completed           |
-| `Task-07`     | AK-47℃                     | Completed           |
-| `Task-08`     | Poke-Search!                | Partially Completed |
-| `Task-09`     | GeoQuest                    | Not Attempted       |
-| `Task-10`     | RuskOS                      | Not Attempted       |
+|  Task-00      | Install Linux               | Completed           |
+|  Task-01      | Terminal Wizard             | Completed           |
+|  Task-02      | Lessgo Hugo                 | Completed           |
+|  Task-03      | Hello,World!                | Completed           |
+|  Task-04      | Competitive Programming     | Not Attempted       |
+|  Task-05      | Hypertext Mockup Language   | Completed           |
+|  Task-06      | Cricket Vault               | Completed           |
+|  Task-07      | AK-47℃                     | Completed           |
+|  Task-08      | Poke-Search!                | Partially Completed |
+|  Task-09      | GeoQuest                    | Not Attempted       |
+|  Task-10      | RuskOS                      | Not Attempted       |
 
 
 ### Why must you choose me?
