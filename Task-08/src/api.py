@@ -4,7 +4,7 @@ import json
 
 def download_image(url,name):
     data = requests.get(url).content
-    f = open("images/{}.svg".format(name),'wb')
+    f = open("images/{}.png".format(name),'wb')
     f.write(data)
     f.close()
 

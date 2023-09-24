@@ -10,12 +10,12 @@ from api import poke_data, get_pokename, get_poke_abilities, get_poke_type, get_
 class PokeWindow(QWidget):
      def __init__(self,search_window_class):
         super().__init__()
-        pokename = search_window_class.textbox.text()
-        data = poke_data(pokename)
+        self.pokename = search_window_class.textbox.text()
+        data = poke_data(self.pokename)
 
-        pic = get_poke_img(data)
+        self.pic = get_poke_img(data)
         image = QImage()
-        image.loadFromData(requests.get(pic).content)
+        image.loadFromData(requests.get(self.pic).content)
         label = QLabel(self)
         pixmap = QPixmap(image)
         label.setPixmap(pixmap)
