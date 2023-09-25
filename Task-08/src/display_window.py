@@ -8,61 +8,67 @@ class DisplayWindow(QWidget):
     def __init__(self,search_window_class):
         super().__init__()
 
-
-        self.setFixedSize(450, 200)
+        self.filenames = []
+        self.setFixedSize(650,500)
+        self.current_index = 0
         
-        dir_path = r'./images'
+        self.dir_path = r'./images'
         list = []
-        for file_path in os.listdir(dir_path):
-            if os.path.isfile(os.path.join(dir_path, file_path)):
+        
+
+        for file_path in os.listdir(self.dir_path):
+            if os.path.isfile(os.path.join(self.dir_path, file_path)):
                 list.append(file_path)
         
+        # self.filenames = list
         
-        self._current_index = 0
-        self._filenames = []
 
-        self.previous_button = QPushButton("Previous")
-        self.next_button = QPushButton("Next")
+        self.label_pic = QLabel(self)
+            
+        pixmap = QPixmap("images/{}".format(list[0]))
+        self.label_pic.setPixmap(pixmap)
+        
+        
 
-        self.label = QLabel()
+        previous_button = QPushButton("Previous",self)
+        previous_button.setGeometry(180,460,80,30)
 
-        lay = QGridLayout(self)
-        lay.addWidget(self.previous_button, 0, 0)
-        lay.addWidget(self.next_button, 0, 1)
-        lay.addWidget(self.label, 1, 0, 1, 3)
+        next_button = QPushButton("Next",self)
+        next_button.setGeometry(500,460,80,30)
 
-        self.previous_button.clicked.connect(self.handle_previous)
-        self.next_button.clicked.connect(self.handle_next)
+        previous_button.clicked.connect(self.handle_previous)
+        next_button.clicked.connect(self.handle_next)
         self.load_files()
-
-
-    # @property
-    # def current_index(self):
-    #     return self._current_index
-
-    # @current_index.setter
-    # def current_index(self, index):
-
-    #     if 0 <= index < __len__(self):
-    #         self._current_index = index
-    #         filename = self._filenames[self._current_index]
-    #         pixmap = QPixmap(filename)
-    #         self.label.setPixmap(pixmap)
-
-
+    
     def load_files(self):
-        self._filenames = list
+        self.filenames = os.listdir(self.dir_path)
+        print(self.filenames)
+
+
+    @property
+    def current_index(self):
+        return self.current_index
+
+    @current_index.setter
+    def current_index(self, index):
         
-        self.current_index = 0
+        print("length is",len(self.filenames))
+        if 0 <= index < len(self.filenames):
+            self.current_index = index
+            filename = self.filenames[self.current_index]
+            pixmap = QPixmap("images/{}".format(filename))
+            self.label_pic.setPixmap(pixmap)
 
     
     def __len__(self):
-        return len(self._filenames)
+        return len(self.filenames)
 
     def handle_next(self):
         self.current_index += 1
+        print(self.current_index)
 
     def handle_previous(self):
-        self.current_index -= 1    
+        self.current_index -= 1  
+        print(self.current_index)  
     
    
