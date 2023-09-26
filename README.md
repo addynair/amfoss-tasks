@@ -14,7 +14,7 @@ I am Aditi Nair from Palakkad, Kerala, currently a first-year student in Electro
 |  Task-05      | Hypertext Mockup Language   | Completed           |
 |  Task-06      | Cricket Vault               | Completed           |
 |  Task-07      | AK-47℃                     | Completed           |
-|  Task-08      | Poke-Search!                | Partially Completed |
+|  Task-08      | Poke-Search!                | Completed           |
 |  Task-09      | GeoQuest                    | Not Attempted       |
 |  Task-10      | RuskOS                      | Not Attempted       |
 
