@@ -39,10 +39,6 @@ def get_pokestats(data):
         stat_values =stats[x]['base_stat']
         poke_dict[stat_name]= stat_values  
     return poke_dict
-       
-            
-                      
-               
 
 
 def poke_data(poke_name):

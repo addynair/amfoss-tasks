@@ -16,10 +16,6 @@ class SearchWindow(QWidget):
     def __init__(self):
         super().__init__()
        
-       
-        # self.textbox.setStyleSheet("""position: absolute""" )
-
-       
         self.background_label = QLabel(self)
         self.background_label.setGeometry(0, 0, 850, 500) 
 
@@ -27,7 +23,6 @@ class SearchWindow(QWidget):
         self.background_label.setPixmap(background_image)
 
       
-        
         label1 = QLabel("Enter the name", self)
         label1.setGeometry(50, 5, 600, 70)
 
@@ -62,14 +57,9 @@ class SearchWindow(QWidget):
 
     # 3 #
     # Display all the Pokémon captured with their respective names using a new window.
-    
-    
 
 
-
-     
     def open_poke_window(self, checked):
-
         
         if self.w is None:
             self.w = PokeWindow(self)
