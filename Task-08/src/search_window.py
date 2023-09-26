@@ -62,6 +62,7 @@ class SearchWindow(QWidget):
     def open_poke_window(self, checked):
         
         if self.w is None:
+            print('a')
             self.w = PokeWindow(self)
         self.w.show()
 
@@ -74,9 +75,8 @@ class SearchWindow(QWidget):
          msgBox.exec_()
  
     def open_display_window(self):
-        
-        if self.w is None:
-            self.w = DisplayWindow(self)
+        print("b")
+        self.w = DisplayWindow(self)
         self.w.show()
 
     
