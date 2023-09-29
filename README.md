@@ -4,19 +4,19 @@
 Hello everyone,
 I am Aditi Nair from Palakkad, Kerala, currently a first-year student in Electronics and Computer Engineering(EAC) at Amrita Vishwa Vidyapeetham.
 
-| Tasks List    | Descrption                  | Status              |
-|:-------------:|:---------------------------:|:--------------:     |
-|  Task-00      | Install Linux               | Completed           |
-|  Task-01      | Terminal Wizard             | Completed           |
-|  Task-02      | Lessgo Hugo                 | Completed           |
-|  Task-03      | Hello,World!                | Completed           |
-|  Task-04      | Competitive Programming     | Not Attempted       |
-|  Task-05      | Hypertext Mockup Language   | Completed           |
-|  Task-06      | Cricket Vault               | Completed           |
-|  Task-07      | AK-47℃                     | Completed           |
-|  Task-08      | Poke-Search!                | Completed           |
-|  Task-09      | GeoQuest                    | Not Attempted       |
-|  Task-10      | RuskOS                      | Not Attempted       |
+| Tasks List                                                                 | Description                 | Status              |
+|:-------------:                                                             |:---------------------------:|:--------------:     |
+| [Task-00](https://github.com/addynair/amfoss-tasks/tree/main/Task-00)      | Install Linux               | Completed           |
+| [Task-01](https://github.com/addynair/amfoss-tasks/tree/main/Task-01)      | Terminal Wizard             | Completed           |
+| [Task-02](https://github.com/addynair/amfoss-tasks/tree/main/Task-02)      | Lessgo Hugo                 | Completed           |
+| [Task-03](https://github.com/addynair/amfoss-tasks/tree/main/Task-03)      | Hello,World!                | Completed           |
+| [Task-04]()                                                                | Competitive Programming     | Not Attempted       |
+| [Task-05](https://github.com/addynair/amfoss-tasks/tree/main/Task-05)      | Hypertext Mockup Language   | Completed           |
+| [Task-06](https://github.com/addynair/amfoss-tasks/tree/main/Task-06)      | Cricket Vault               | Completed           |
+| [Task-07](https://github.com/addynair/amfoss-tasks/tree/main/Task-07)      | AK-47℃                     | Completed           |
+| [Task-08](https://github.com/addynair/amfoss-tasks/tree/main/Task-08)      | Poke-Search!                | Completed           |
+| [Task-09]()                                                                | GeoQuest                    | Not Attempted       |
+| [Task-10]()                                                                | RuskOS                      | Not Attempted       |
 
 
 ### Why must you choose me?
