@@ -16,7 +16,7 @@ I am Aditi Nair from Palakkad, Kerala, currently a first-year student in Electro
 | [Task-07](https://github.com/addynair/amfoss-tasks/tree/main/Task-07)      | AK-47℃                     | Completed           |
 | [Task-08](https://github.com/addynair/amfoss-tasks/tree/main/Task-08)      | Poke-Search!                | Completed           |
 | [Task-09]()                                                                | GeoQuest                    | Not Attempted       |
-| [Task-10]()                                                                | RuskOS                      | Not Attempted       |
+| [Task-10]()                                                                | RuskOS                      | Incomplete          |
 
 
 ### Why must you choose me?
