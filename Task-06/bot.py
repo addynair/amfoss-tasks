@@ -5,7 +5,8 @@ import requests
 from discord.ext import commands
 from scraper import *
 from datetime import date
-import pandas as pd
+import time
+
 
 
 
@@ -40,12 +41,14 @@ async def livescore(ctx):
 
 
 def add_score(score):
-    f.write(score + '\n')
+    timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
+    f.write(score)
+    f.write( timestamp + '\n')
     
     
 @bot.command()
 async def csv(ctx):
-    print("haha")
+    print("Opening")
     f.close()
     file =open("index.csv")
     await ctx.send(file=discord.File(file))
